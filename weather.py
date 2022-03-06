@@ -2,10 +2,7 @@ from flask import Flask, render_template, request
 
 # import json to load JSON data to a python dictionary
 import requests
-import json
 
-# urllib.request to make a request to api
-import urllib.request
 
 app = Flask(__name__)
 
@@ -15,7 +12,7 @@ def weather():
     if request.method == 'POST':
         city = request.form['city']
     else:
-        # for default name mathura
+        # for default name BHOPAL
         city = 'Bhopal'
 
     # your API key will come here
