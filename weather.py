@@ -15,7 +15,7 @@ def weather():
         city = request.form['city']
     else:
         # for default name mathura
-        city = 'bhopal'
+        city = 'Bhopal'
 
     # your API key will come here
     api = "8f175536dc374b00de60501797e5fff8"
