@@ -29,15 +29,16 @@
     <div class=col-md-offset-3">
         <div>
             <h2>Weather in {{data.cityname}}</h2>
-            <img src={{data.icon}}><h4>{{data.desc}}</h4>
-            <h5>temp :- {{data.temp}}</h5>
-            <h5>wind :- {{data.wind}} </h5>
-            <h5>humidity :- {{data.humidity}}%</h5>
+            <img src={{data.icon}}><h3>{{data.desc}}</h3>
+            <h4>temp :- {{data.temp}}</h4>
+            <h4>wind :- {{data.wind}} </h4>
+            <h4>humidity :- {{data.humidity}}%</h4>
         </div>
     </div>
      {% else %}
         <div>
-            <h1>Bad Request</h1>
+            <h1>{{data}}</h1>
+            <h1>please try another city or, check your spelling</h1>
         </div>
             {% endif %}
      </form>
