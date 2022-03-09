@@ -1,3 +1,5 @@
+import pprint
+
 from flask import Flask, render_template, request
 
 # import json to load JSON data to a python dictionary
@@ -28,7 +30,10 @@ def weather():
     list_of_data = source.json()
 
     if response != 200:
-     data = {list_of_data['message']}
+     data = {
+         str(list_of_data['message'])
+     }
+     pprint.pprint(data)
     # data for variable list_of_data
     else:
         data = {
@@ -38,11 +43,11 @@ def weather():
          "temp": str(round(list_of_data['main']['temp'], 2)) + '°C',
          "wind": str(list_of_data['wind']['speed']) + ' km/h',
          "humidity": str(list_of_data['main']['humidity']),
-         "backgroundImage": "('https://source.unsplash.com/1600x900/?" + city + "')",
-
      }
+        pprint.pprint(data)
     return render_template('index.html', data=data)
 
+# pprint.pprint(data)
 
 if __name__ == '__main__':
     app.run(debug=True)
