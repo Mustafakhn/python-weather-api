@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: fangsong;
     background: #222;
-    background-image:url('https://source.unsplash.com/1600x900/?weather');
+    background-image:url('https://source.unsplash.com/1800x900/?weather');
     background-repeat:fit;
     font-size: 130%;
     align-content: center;
@@ -108,6 +108,7 @@ h6 {
     width: 30em;
     height: 22em;
     padding: 1.5em;
+    text-transform: capitalize;
 }
 .img {
   vertical-align: bottom;
