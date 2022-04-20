@@ -14,7 +14,7 @@
 <body>
  <center class="row">
     <form method="post" class="container">
-    {% if data.cityname and data.desc and data.icon and data.temp and data.wind and data.humidity %}
+    {% if data.cityname %}
         <div>
             <div class = dt_text>
             <h5>{{data.d_text}} </h5><br><h5>{{data.t_text}} </h5>
@@ -111,7 +111,7 @@
      {% else %}
         <div>
             <h6>{{data}}</h6>
-            <h6>please try another city or check your spelling</h6>
+            <h6>data not available</h6>
         </div>
             {% endif %}
      </form>
