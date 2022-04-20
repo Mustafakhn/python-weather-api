@@ -91,22 +91,21 @@ h6 {
 .dt_text{
    float : right
 }
-.fr1{
--webkit-transition-duration: 200ms,200ms,200ms;
+.fr1 {
+    -webkit-transition-duration: 200ms,200ms,200ms;
     -webkit-transition-property: background-image,border,font-weight;
     display: inline-block;
-    height: 95px;
+    height: 138px;
     line-height: 1;
     margin-right: 7px;
-    text-align:-webkit-center;
+    text-align: -webkit-center;
     width: 78px;
 }
 .container{
     background: #000000d0;
-    padding: 25px;
     border-radius: 70px;
     width: 30em;
-    height: 22em;
+    height: 23em;
     padding: 1.5em;
     text-transform: capitalize;
 }
@@ -143,4 +142,26 @@ input.search-bar {
 }
 button:hover {
   background: #7c7c7c6b;
+}
+a:-webkit-any-link {
+    color: darkgray;;
+    cursor: pointer;
+    text-decoration: underline;
+    float: right;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.fr2 {
+    -webkit-transition-duration: 200ms,200ms,200ms;
+    -webkit-transition-property: background-image,border,font-weight;
+    display: inline-block;
+    height: 138px;
+    line-height: 1;
+    margin-right: 5px;
+    text-align: -webkit-center;
+    width: 78px;
+    border-bottom: groove;
+    margin-block-start: 2.5em;
+    margin-block-end: 10px;
+    block-size: auto;
 }

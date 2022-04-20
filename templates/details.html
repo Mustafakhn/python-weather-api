@@ -6,84 +6,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
-   <script src="./weather.py" defer></script>
+    <link href= "./templates/details.html"/>
+    <script src="./weather.py" defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 </head>
 <body>
  <center class="row">
     <form method="post" class="container">
-        <div class="input-group" style="margin-top: -19px;">
-            <div class="search">
-                <input type="text" class="search-bar" name="city" placeholder="Search">
-                <button>
-                    <svg fill="currentColor" height="1.5em" stroke="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                         width="1.5em" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                                d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-            <div class="row">
     {% if data.cityname and data.desc and data.icon and data.temp and data.wind and data.humidity %}
-    <div class=weather">
         <div>
             <div class = dt_text>
             <h5>{{data.d_text}} </h5><br><h5>{{data.t_text}} </h5>
             </div>
-            <h1>Weather in {{data.cityname}}</h1>
-            <img src="{{data.icon}}" style="vertical-align: bottom;"><h2>{{data.desc}} </h2>
-            <h3>temp :- {{data.temp}} </h3>
-            <h3>wind :- {{data.wind}} </h3>
-            <h3>humidity :- {{data.humidity}}%</h3>
-            <div class="fr1">
+            <h1>Forecast of {{data.cityname}}</h1>
+            <div class="fr2">
              <h4>{{data.desc1}}</h4>
             <img src="{{data.icon1}}">
              <h4>{{data.temp1}}</h4><br>
              <h4>{{data.dt_text1}}</h4>
             </div>
-            <div class="fr1">
+            <div class="fr2">
              <h4>{{data.desc2}}</h4>
             <img src="{{data.icon2}}">
              <h4>{{data.temp2}}</h4><br>
              <h4>{{data.dt_text2}}</h4>
             </div>
-            <div class="fr1">
+            <div class="fr2">
              <h4>{{data.desc3}}</h4>
             <img src="{{data.icon3}}">
              <h4>{{data.temp3}}</h4><br>
              <h4>{{data.dt_text3}}</h4>
             </div>
-            <div class="fr1">
+            <div class="fr2">
              <h4>{{data.desc4}}</h4>
             <img src="{{data.icon4}}">
              <h4>{{data.temp4}}</h4><br>
              <h4>{{data.dt_text4}}</h4>
             </div>
-            <div class="fr1">
+            <div class="fr2">
              <h4>{{data.desc5}}</h4>
             <img src="{{data.icon5}}">
              <h4>{{data.temp5}}</h4><br>
              <h4>{{data.dt_text5}}</h4>
             </div>
-            <div class="fr1">
+            <div class="fr2">
              <h4>{{data.desc6}}</h4>
             <img src="{{data.icon6}}">
              <h4>{{data.temp6}}</h4><br>
              <h4>{{data.dt_text6}}</h4>
             </div>
-            <div class="fr1">
+            <div class="fr2">
              <h4>{{data.desc7}}</h4>
             <img src="{{data.icon7}}">
              <h4>{{data.temp7}}</h4><br>
              <h4>{{data.dt_text7}}</h4>
             </div>
+            <div class="fr2">
+             <h4>{{data.desc8}}</h4>
+            <img src="{{data.icon8}}">
+             <h4>{{data.temp8}}</h4><br>
+             <h4>{{data.dt_text8}}</h4>
+            </div>
+            <div class="fr2">
+             <h4>{{data.desc9}}</h4>
+            <img src="{{data.icon9}}">
+             <h4>{{data.temp9}}</h4><br>
+             <h4>{{data.dt_text9}}</h4>
+            </div>
+            <div class="fr2">
+             <h4>{{data.desc10}}</h4>
+            <img src="{{data.icon10}}">
+             <h4>{{data.temp10}}</h4><br>
+             <h4>{{data.dt_text10}}</h4>
+            </div>
+            <div class="fr2">
+             <h4>{{data.desc11}}</h4>
+            <img src="{{data.icon11}}">
+             <h4>{{data.temp11}}</h4><br>
+             <h4>{{data.dt_text11}}</h4>
+            </div>
+            <div class="fr2">
+             <h4>{{data.desc12}}</h4>
+            <img src="{{data.icon12}}">
+             <h4>{{data.temp12}}</h4><br>
+             <h4>{{data.dt_text12}}</h4>
+            </div>
+            <div class="fr2">
+             <h4>{{data.desc13}}</h4>
+            <img src="{{data.icon13}}">
+             <h4>{{data.temp13}}</h4><br>
+             <h4>{{data.dt_text13}}</h4>
+            </div>
+            <div class="fr2">
+             <h4>{{data.desc14}}</h4>
+            <img src="{{data.icon14}}">
+             <h4>{{data.temp14}}</h4><br>
+             <h4>{{data.dt_text14}}</h4>
+            </div>
+                    <div>
+        <a href="/">back to home page</a>
         </div>
-        <div>
-        <a href="details">detailed forecast</a>
         </div>
-    </div>
      {% else %}
         <div>
             <h6>{{data}}</h6>
@@ -93,5 +117,4 @@
      </form>
  </center>
 </body>
-
 </html>
