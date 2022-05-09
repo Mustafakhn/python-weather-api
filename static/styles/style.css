@@ -7,7 +7,7 @@ body {
     font-family: fangsong;
     background: #222;
     background-image:url('https://source.unsplash.com/1920x1080/?weather');
-    background-repeat:fit;
+    background-repeat:inherit;
     font-size: 130%;
     align-content: center;
 }
@@ -25,7 +25,7 @@ center {
 h1 {
     display: block;
     color: white;
-    font-size: 2em;
+    font-size: xx-large;
     margin-block-start: 0.3em;
     margin-block-end: 0.1em;
     margin-inline-start: 0px;
@@ -36,7 +36,7 @@ h1 {
 h2 {
     DISPLAY: INLINE-FLEX;
     color: white;
-    font-size: 1.5em;
+    font-size: inherit;
     margin-block-start: -0.1em;
     margin-block-end: -0.17em;
     text-transform: capitalize;
@@ -48,14 +48,14 @@ h3 {
     text-transform: capitalize;
     display: -webkit-box;
     color: white;
-    font-size: 1.3em;
+    font-size: inherit;
     font-weight: bold;
     margin-left: 5px;
 }
 h4 {
     display: table-cell;
     text-align: revert;;
-    font-size: 0.75em;
+    font-size: x-small;
     margin-block-start: -1.5em;
     margin-block-end: -0.7em;
     margin-inline-start: 19px;
@@ -69,7 +69,7 @@ h5 {
     margin-bottom: -0.5em;
     margin-top: 0.5em;
     float: right;
-    font-size: 1em;
+    font-size: small;
     font-weight: bold;
     color: white;
     text-transform: capitalize;
@@ -81,7 +81,6 @@ h6 {
     color: white;
     font-size: -webkit-xxx-large;
     display: block;
-    font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
@@ -104,8 +103,8 @@ h6 {
 .container{
     background: #000000d0;
     border-radius: 70px;
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     padding: 1.8em;
     text-transform: capitalize;
 }
@@ -150,6 +149,7 @@ a:-webkit-any-link {
     float: right;
     padding-right: 20px;
     margin-top: 10px;
+    font-size: initial;
 }
 .fr2 {
     -webkit-transition-duration: 200ms,200ms,200ms;
